@@ -81,20 +81,16 @@
             "Dnepr",
             "Kharkov",
             "Lvov"});
+            this.comboBox1.BackColor = System.Drawing.Color.Fuchsia;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Kiev",
-            "Odessa",
-            "Dnepr",
-            "Kharkov",
-            "Lvov",
-            "Ternopil"});
             this.comboBox1.Location = new System.Drawing.Point(579, 185);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(299, 33);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.Text = "Kiev";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.TextUpdate += new System.EventHandler(this.comboBox1_TextUpdate);
+
             // 
             // groupBox2
             // 
@@ -182,12 +178,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Fuchsia;
             this.ClientSize = new System.Drawing.Size(920, 375);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "WeatherWatch";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
