@@ -20,7 +20,7 @@ namespace WeatherWatch.OpenWeather
         {
             get
             {
-                return new Bitmap(Image.FromFile($"icons/{icon}.png"));
+                return new Bitmap(Image.FromFile($"../../../icons/{icon}.png"));
             }
         } 
     }

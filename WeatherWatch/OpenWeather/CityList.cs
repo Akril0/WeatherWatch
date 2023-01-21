@@ -18,7 +18,7 @@ namespace WeatherWatch.OpenWeather
         
         private async void ReadFile()
         {
-            string path = "Cities/cityList.txt";
+            string path = "../../../Cities/cityList.txt";
 
             // асинхронное чтение
             using (StreamReader reader = new StreamReader(path))
